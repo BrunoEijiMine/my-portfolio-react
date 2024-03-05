@@ -17,7 +17,6 @@ function Header() {
                 <a href="">Inicio</a>
                 <a href="">Experiência</a>
                 <a href="">Currículo</a>
-                <a href="">Sobre mim</a>
                 <button className='nav-btn nav-close-btn' onClick={shadowNavBar}>
                     <FontAwesomeIcon icon={faTimes} />
                 </button>

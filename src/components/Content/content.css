@@ -1,0 +1,51 @@
+@import url(../../main.css);
+
+.container-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+}
+
+.container-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.name{
+    font-size: 140px;
+    font-weight: 800;
+    color: var(--textColor);
+}
+
+.description{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.container-social{
+    /* background-color: var(--textColor); */
+    color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-social .icon{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.container-social .icon:hover{
+    color: var(--secondaryColor);
+}
