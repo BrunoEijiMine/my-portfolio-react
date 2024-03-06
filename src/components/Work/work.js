@@ -36,6 +36,16 @@ function Work() {
                     <p>Atualmente, desempenho o papel de Assistente Programador 3, sendo responsável por trabalhar tanto no desenvolvimento front-end quanto no back-end. Assumo a responsabilidade de criar projetos para o nosso sistema interno e também colaboro em projetos para outros setores da empresa. No entanto, minha principal ênfase está no front-end, onde concentro meus esforços em aprimorar minhas habilidades e proporcionar soluções atraentes e eficientes para os usuários.</p>
                 </div>
             </div>
+            <div className='work-container'>
+                <div className='company'>
+                    <h1>Hospital de Amor</h1>
+                    <p>Atualmente</p>
+                </div>
+                <div className='office'>
+                    <h1>Assistente Programador III</h1>
+                    <p>Atualmente, desempenho o papel de Assistente Programador 3, sendo responsável por trabalhar tanto no desenvolvimento front-end quanto no back-end. Assumo a responsabilidade de criar projetos para o nosso sistema interno e também colaboro em projetos para outros setores da empresa. No entanto, minha principal ênfase está no front-end, onde concentro meus esforços em aprimorar minhas habilidades e proporcionar soluções atraentes e eficientes para os usuários.</p>
+                </div>
+            </div>
         </section>
     );
 }

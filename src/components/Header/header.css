@@ -1,5 +1,9 @@
 @import url(../../main.css);
 
+.logo{
+    width: 50px;
+}
+
 header{
     display: flex;
     align-items: center;

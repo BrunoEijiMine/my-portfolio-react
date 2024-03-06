@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import "../Header/header.css"
 
+import logo from "../../img/LOGO.png"
+
 function Header() {
     const navRef = useRef();
 
@@ -12,7 +14,7 @@ function Header() {
 
     return (
         <header>
-            <h3>Logo</h3>
+        <img src={logo} className='logo' />
             <nav ref={navRef}>
                 <a href="">Inicio</a>
                 <a href="">Experiência</a>
