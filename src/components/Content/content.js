@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {} from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import "../Content/content.css"

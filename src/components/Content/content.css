@@ -2,7 +2,7 @@
 
 .container-content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
     padding: 2rem;
 }
 
@@ -12,25 +12,26 @@
 }
 
 .title{
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 600;
     color: var(--secondaryColor);
 }
 
 .name{
-    font-size: 140px;
+    font-size: 200px;
     font-weight: 800;
     color: var(--textColor);
 }
 
 .description{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     color: var(--secondaryColor);
+    line-height: 1.9;
+    letter-spacing: 0.4px;
 }
 
 .container-social{
-    /* background-color: var(--textColor); */
     color: var(--textColor);
     display: flex;
     flex-direction: column;
@@ -41,11 +42,107 @@
 }
 
 .container-social .icon{
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 .container-social .icon:hover{
     color: var(--secondaryColor);
+}
+
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-social{
+        flex-direction: row;
+    }
+
+    .title{
+        font-size: 25px
+    }
+
+    .name{
+        font-size: 90px;
+    }
+
+    .description{
+        font-size: 20px;
+    }
+}
+
+/* (480x800) Android */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+    .container-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-social{
+        flex-direction: row;
+    }
+}
+
+/* (640x960) iPhone 4 & 4S */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .container-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-social{
+        flex-direction: row;
+    }
+}
+
+/* (720x1280) Galaxy Nexus, WXGA */
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+
+}
+
+
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-social{
+        flex-direction: row;
+    }
+}
+
+/* (2048x1536) iPad 3 */
+@media only screen and (min-width: 1536px) and (max-width: 2048px) {
+    /* insert styles here */
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    /* insert styles here */
+}
+
+/* (1280x1024) SXGA Display */
+@media screen and (min-width: 1280px) {
+}
+
+/* (1366x768) WXGA Display */
+@media screen and (min-width: 1366px) {
+}
+
+/* (1440x900) WXGA+ Display */
+@media screen and (min-width: 1440px) {
+}
+
+/* (1680x1050) WSXGA+ Display */
+@media screen and (min-width: 1680px) {
+}
+
+/* (1920x1080) Full HD Display */
+@media screen and (min-width: 1920px) {
 }

@@ -1,0 +1,88 @@
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slide-container {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.slide-container:before,
+.slide-container:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.slide-container:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.slide-container:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.slide-container:hover .slide {
+    animation-play-state: paused;
+}
+
+.slide {
+    display: inline-flex;
+    animation: 20s slide infinite linear;
+}
+
+.slide h1 {
+    height: 50px;
+    margin: 0 25px;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.work-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 2rem;
+}
+
+.company{
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+}
+
+.company p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.company h1{
+    font-size: 30px;
+}
+
+
+.office{
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+}
+
+.office h1{
+    font-size: 30px;
+}
+
+.office p{
+    font-size: 20px;
+    font-weight: 300;
+}
