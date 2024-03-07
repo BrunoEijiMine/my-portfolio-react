@@ -59,7 +59,6 @@
 .work-container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    padding: 2rem;
     grid-gap: 2rem;
 }
 
