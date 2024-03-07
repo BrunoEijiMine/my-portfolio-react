@@ -1,3 +1,7 @@
+:root{
+    --colorSkillBG: #e2e2e2;
+}
+
 @keyframes slide {
     from {
         transform: translateX(0);
@@ -56,11 +60,15 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     padding: 2rem;
+    grid-gap: 2rem;
 }
 
 .company{
     line-height: 1.9;
     letter-spacing: 0.4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .company p{
@@ -71,7 +79,6 @@
 .company h1{
     font-size: 30px;
 }
-
 
 .office{
     line-height: 1.9;
@@ -85,4 +92,88 @@
 .office p{
     font-size: 20px;
     font-weight: 300;
+}
+
+.work-skill{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.work-skill span{
+    background-color: var(--colorSkillBG);
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.work-date{
+    font-size: 16px !important;
+}
+
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .work-container {
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+/* (480x800) Android */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+    .work-skill{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* (640x960) iPhone 4 & 4S */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .work-skill{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* (720x1280) Galaxy Nexus, WXGA */
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+
+}
+
+
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .work-skill{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* (2048x1536) iPad 3 */
+@media only screen and (min-width: 1536px) and (max-width: 2048px) {
+    /* insert styles here */
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    /* insert styles here */
+}
+
+/* (1280x1024) SXGA Display */
+@media screen and (min-width: 1280px) {
+}
+
+/* (1366x768) WXGA Display */
+@media screen and (min-width: 1366px) {
+}
+
+/* (1440x900) WXGA+ Display */
+@media screen and (min-width: 1440px) {
+}
+
+/* (1680x1050) WSXGA+ Display */
+@media screen and (min-width: 1680px) {
+}
+
+/* (1920x1080) Full HD Display */
+@media screen and (min-width: 1920px) {
 }

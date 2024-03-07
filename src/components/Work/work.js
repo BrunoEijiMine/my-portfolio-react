@@ -29,21 +29,34 @@ function Work() {
             <div className='work-container'>
                 <div className='company'>
                     <h1>Hospital de Amor</h1>
-                    <p>Atualmente</p>
+                    <p className='work-date'>Atualmente</p>
+                    <div className='work-skill'>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>PHP</span>
+                        <span>Figma</span>
+                    </div>
                 </div>
                 <div className='office'>
                     <h1>Assistente Programador III</h1>
-                    <p>Atualmente, desempenho o papel de Assistente Programador 3, sendo responsável por trabalhar tanto no desenvolvimento front-end quanto no back-end. Assumo a responsabilidade de criar projetos para o nosso sistema interno e também colaboro em projetos para outros setores da empresa. No entanto, minha principal ênfase está no front-end, onde concentro meus esforços em aprimorar minhas habilidades e proporcionar soluções atraentes e eficientes para os usuários.</p>
+                    <p>Atualmente, como Assistente Programador 3, trabalho no desenvolvimento tanto front-end quanto back-end. Sou responsável por projetos internos e colaboro em outras áreas da empresa. Minha ênfase principal é no front-end, onde busco melhorar minhas habilidades e oferecer soluções eficientes aos usuários.</p>
                 </div>
             </div>
             <div className='work-container'>
                 <div className='company'>
                     <h1>Hospital de Amor</h1>
-                    <p>Atualmente</p>
+                    <p className='work-date'>Nov 2021 - Abr 2023(1 ano 6 meses)</p>
+                    <div className='work-skill'>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
                 </div>
                 <div className='office'>
-                    <h1>Assistente Programador III</h1>
-                    <p>Atualmente, desempenho o papel de Assistente Programador 3, sendo responsável por trabalhar tanto no desenvolvimento front-end quanto no back-end. Assumo a responsabilidade de criar projetos para o nosso sistema interno e também colaboro em projetos para outros setores da empresa. No entanto, minha principal ênfase está no front-end, onde concentro meus esforços em aprimorar minhas habilidades e proporcionar soluções atraentes e eficientes para os usuários.</p>
+                    <h1>Jovem Aprendiz - TI</h1>
+                    <p>Trabalhei na empresa ajudando em projetos, principalmente no desenvolvimento front-end, mesmo sendo minha primeira experiência prática. Agora, estou focado em melhorar minhas habilidades no desenvolvimento back-end, com o apoio da equipe.</p>
                 </div>
             </div>
         </section>
