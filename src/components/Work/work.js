@@ -30,14 +30,14 @@ function Work() {
                 <div className='company'>
                     <h1>Hospital de Amor</h1>
                     <p className='work-date'>Atualmente</p>
-                    <div className='work-skill'>
+                    {/* <div className='work-skill'>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                         <span>React</span>
                         <span>PHP</span>
                         <span>Figma</span>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='office'>
                     <h1>Assistente Programador III</h1>
@@ -48,11 +48,11 @@ function Work() {
                 <div className='company'>
                     <h1>Hospital de Amor</h1>
                     <p className='work-date'>Nov 2021 - Abr 2023(1 ano 6 meses)</p>
-                    <div className='work-skill'>
+                    {/* <div className='work-skill'>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>PHP</span>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='office'>
                     <h1>Jovem Aprendiz - TI</h1>
