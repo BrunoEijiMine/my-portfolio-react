@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 import "../About/about.css";
 
 function About() {
@@ -24,32 +22,6 @@ function About() {
       <section>
         <div class="parallax"></div>
       </section>
-      <div className="container-my-skils">
-        <div className="card-skil">
-          <FontAwesomeIcon icon={faTerminal} />
-          <p>UI/UX Desingning</p>
-        </div>
-        <div className="card-skil">
-          <FontAwesomeIcon icon={faTerminal} />
-          <p>App UI/UX</p>
-        </div>
-        <div className="card-skil">
-          <FontAwesomeIcon icon={faTerminal} />
-          <p>Web Developement</p>
-        </div>
-        <div className="card-skil">
-          <FontAwesomeIcon icon={faTerminal} />
-          <p>Graphic Desingning</p>
-        </div>
-        <div className="card-skil">
-          <FontAwesomeIcon icon={faTerminal} />
-          <p>Product Desingning</p>
-        </div>
-        <div className="card-skil">
-          <FontAwesomeIcon icon={faTerminal} />
-          <p>Social Media Post</p>
-        </div>
-      </div>
     </div>
   );
 }

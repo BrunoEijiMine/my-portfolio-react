@@ -8,8 +8,8 @@
 }
 
 :root{
-    --mainColor: #FFFFFF;
-    --mainColorLight: #0022a8;
+    --background: #F5F4F3;
+    --mainColor: #F5F4F3;
     --secondaryColor: #8d8d8d;
-    --textColor: #1b1b1b;
+    --textColor: #242424;
 }

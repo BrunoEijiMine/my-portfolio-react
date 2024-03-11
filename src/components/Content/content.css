@@ -9,6 +9,7 @@
 .container-name{
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
 }
 
 .title{
@@ -61,7 +62,7 @@
     width: 30px;
     height: 50px;
     box-sizing: border-box;
-    border: 2px solid #000;
+    border: 2px solid var(--textColor);;
     position: relative;
     border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
   }
@@ -74,7 +75,7 @@
     transform: translate(-50% , 50%);
     width: 10px;
     height: 10px;
-    background: #000;
+    background: var(--textColor);;
     border-radius: 50%;
     animation: fadeDown 1s ease-out infinite;
   }

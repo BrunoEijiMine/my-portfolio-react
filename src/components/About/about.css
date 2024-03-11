@@ -5,12 +5,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     background-color: var(--mainColor);
+    padding: 0 0 20rem 0;
 }
 
 .title-about {
     font-size: 120px;
-    color: var(--text-color);
-    /* padding: 2rem; */
+    color: var(--textColor);
 }
 
 /* PICTURE ME */
@@ -28,107 +28,91 @@
     background-position: right;
 }
 
+
 /* CONTAINER ABOUT */
 .about:nth-of-type(1) {
-    color: var(--text-color);
+    color: var(--textColor);
     font-size: 20px;
     font-weight: 300;
     line-height: 1.9;
     letter-spacing: 0.4px;
 }
 
-/* SKILLS */
-.container-my-skils {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column: span 3;
-    grid-gap: 2rem;
-    padding: 2rem 0 10rem 0;
-}
-
-.card-skil {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    height: 100px;
-    border: 1px solid var(--secondaryColor);
-    color: var(--text-color);
-    background-color: var(--text-color);
-}
-
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .container-about {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-    }
-
-    .container-my-skils {
-        grid-template-columns: 1fr;
-    }
-
-    .gradient-text {
-        background-image: none;
         padding: 0;
+    }
+
+    .parallax {
+        height: 400px;
     }
 
     .title-about {
         font-size: 50px;
         text-align: center;
     }
+
+    .about:nth-of-type(1) {
+        text-align: center;
+    }
 }
 
 /* (480x800) Android */
 @media only screen and (min-width: 480px) and (max-width: 800px) {
-
-    .container-my-skils {
-        grid-template-columns: 1fr;
-    }
-
-    .gradient-text {
-        background-image: none;
-        padding: 0;
-    }
-
     .container-about {
         grid-template-columns: none;
         grid-gap: 0;
+        padding: 0;
+    }
+
+    .parallax {
+        height: 400px;
+        background-position: center;
+    }
+
+    .about:nth-of-type(1) {
+        text-align: center;
     }
 }
 
 /* (640x960) iPhone 4 & 4S */
 @media only screen and (min-width: 640px) and (max-width: 960px) {
 
-    .container-my-skils {
-        grid-template-columns: 2fr;
-    }
-
-    .gradient-text {
-        background-image: none;
-        padding: 0;
-    }
     .container-about {
         grid-template-columns: none;
         grid-gap: 0;
+        padding: 0;
+    }
+
+    .parallax {
+        height: 400px;
+        background-position: center;
+    }
+
+    .about:nth-of-type(1) {
+        text-align: center;
     }
 }
 
 /* (720x1280) Galaxy Nexus, WXGA */
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
-
-    .container-my-skils {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gradient-text {
-        background-image: none;
-        padding: 0;
-    }
     .container-about {
         grid-template-columns: none;
         grid-gap: 0;
+        padding: 0;
+    }
+
+    .parallax {
+        height: 400px;
+        background-position: center;
+    }
+
+    .about:nth-of-type(1) {
+        text-align: center;
     }
 }
 
@@ -138,6 +122,15 @@
     .container-about {
         grid-template-columns: none;
         grid-gap: 0;
+        padding: 0;
+    }
+
+    .parallax {
+        height: 400px;
+    }
+
+    .about:nth-of-type(1) {
+        text-align: center;
     }
 }
 
