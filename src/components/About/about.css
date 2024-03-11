@@ -1,15 +1,16 @@
 @import url(../../main.css);
 
-.container-about{
+.container-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #000;
+    grid-gap: 2rem;
+    background-color: var(--mainColor);
 }
 
-.title-about{
-    font-size: 50px;
-    color: var(--mainColor);
-    padding: 2rem;
+.title-about {
+    font-size: 120px;
+    color: var(--text-color);
+    /* padding: 2rem; */
 }
 
 /* PICTURE ME */
@@ -27,112 +28,117 @@
     background-position: right;
 }
 
-.gradient-text {
-    background-image: linear-gradient(to right, #FFF, #000);
-    font-weight: 600;
-    font-size: 20px;
-    padding: 20px;
-    
-}
-
 /* CONTAINER ABOUT */
-.about{
-    display: flex;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.about:nth-of-type(1){
-    color: var(--mainColor);
+.about:nth-of-type(1) {
+    color: var(--text-color);
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.9;
     letter-spacing: 0.4px;
 }
 
-
 /* SKILLS */
-.container-my-skils{
+.container-my-skils {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column: span 3;
     grid-gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 0 10rem 0;
 }
 
-.card-skil{
+.card-skil {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     width: 100%;
     height: 100px;
-    /* border-radius: 1rem; */
     border: 1px solid var(--secondaryColor);
-    color: var(--mainColor);
+    color: var(--text-color);
     background-color: var(--text-color);
 }
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .container-about{
+    .container-about {
         display: flex;
         flex-direction: column;
     }
 
-    .container-my-skils{
-            grid-template-columns: 1fr;
+    .container-my-skils {
+        grid-template-columns: 1fr;
     }
 
-    .gradient-text{
+    .gradient-text {
         background-image: none;
         padding: 0;
+    }
+
+    .title-about {
+        font-size: 50px;
+        text-align: center;
     }
 }
 
 /* (480x800) Android */
 @media only screen and (min-width: 480px) and (max-width: 800px) {
 
-    .container-my-skils{
-            grid-template-columns: 1fr;
+    .container-my-skils {
+        grid-template-columns: 1fr;
     }
 
-    .gradient-text{
+    .gradient-text {
         background-image: none;
         padding: 0;
+    }
+
+    .container-about {
+        grid-template-columns: none;
+        grid-gap: 0;
     }
 }
 
 /* (640x960) iPhone 4 & 4S */
 @media only screen and (min-width: 640px) and (max-width: 960px) {
 
-    .container-my-skils{
-            grid-template-columns: 2fr;
+    .container-my-skils {
+        grid-template-columns: 2fr;
     }
 
-    .gradient-text{
+    .gradient-text {
         background-image: none;
         padding: 0;
+    }
+    .container-about {
+        grid-template-columns: none;
+        grid-gap: 0;
     }
 }
 
 /* (720x1280) Galaxy Nexus, WXGA */
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
 
-    .container-my-skils{
-            grid-template-columns: repeat(2, 1fr);
+    .container-my-skils {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .gradient-text{
+    .gradient-text {
         background-image: none;
         padding: 0;
+    }
+    .container-about {
+        grid-template-columns: none;
+        grid-gap: 0;
     }
 }
 
 
 /* (1024x768) iPad 1 & 2, XGA */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
- 
+    .container-about {
+        grid-template-columns: none;
+        grid-gap: 0;
+    }
 }
 
 /* (2048x1536) iPad 3 */
@@ -146,21 +152,16 @@
 }
 
 /* (1280x1024) SXGA Display */
-@media screen and (min-width: 1280px) {
-}
+@media screen and (min-width: 1280px) {}
 
 /* (1366x768) WXGA Display */
-@media screen and (min-width: 1366px) {
-}
+@media screen and (min-width: 1366px) {}
 
 /* (1440x900) WXGA+ Display */
-@media screen and (min-width: 1440px) {
-}
+@media screen and (min-width: 1440px) {}
 
 /* (1680x1050) WSXGA+ Display */
-@media screen and (min-width: 1680px) {
-}
+@media screen and (min-width: 1680px) {}
 
 /* (1920x1080) Full HD Display */
-@media screen and (min-width: 1920px) {
-}
+@media screen and (min-width: 1920px) {}
