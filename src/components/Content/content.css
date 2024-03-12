@@ -28,8 +28,6 @@
     font-size: 25px;
     font-weight: 600;
     color: var(--secondaryColor);
-    line-height: 1.9;
-    letter-spacing: 0.4px;
 }
 
 .container-social{
@@ -142,7 +140,6 @@
     .container-content{
         display: flex;
         flex-direction: column;
-        height: 0%;
     }
 
     .container-social{
@@ -165,7 +162,6 @@
     .container-content{
         display: flex;
         flex-direction: column;
-        height: 0%;
     }
 
     .container-social{
