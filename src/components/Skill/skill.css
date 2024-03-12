@@ -1,1 +1,7 @@
 @import url(../../main.css);
+
+.title-skill{
+    font-size: 120px;
+    color: var(--textColor);
+    text-align: right;
+}

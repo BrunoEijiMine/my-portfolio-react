@@ -8,8 +8,11 @@
 }
 
 :root{
-    --background: #F5F4F3;
-    --mainColor: #F5F4F3;
+    /* --background: #F5F4F3; */
+    --background: #242424;
+    /* --mainColor: #F5F4F3; */
+    --mainColor: #242424;
     --secondaryColor: #8d8d8d;
-    --textColor: #242424;
+    --textColor: #F5F4F3;
+    /* --textColor: #242424; */
 }
