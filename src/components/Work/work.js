@@ -19,11 +19,11 @@ function Work() {
             <div className="slide-container">
                 <div className="slide">
                     <h1>WORK</h1>
-                    <h1>JOB</h1>
+                    <h1 className='color-text'>JOB</h1>
                     <h1>WORK</h1>
-                    <h1>JOB</h1>
+                    <h1 className='color-text'>JOB</h1>
                     <h1>WORK</h1>
-                    <h1>JOB</h1>
+                    <h1 className='color-text'>JOB</h1>
                 </div>
             </div>
             <div className='work-container'>
