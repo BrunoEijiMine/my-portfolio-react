@@ -5,6 +5,7 @@
     --mainColor: #18181b;
     --secondaryColor: #dbeafe;
     --textColor: #d4d4d8;
+    --borderColor: #27272a;
 
     --text-xs-font-size: 0.75rem; /* 12px */
     --text-xs-line-height: 1rem; /* 16px */
@@ -59,4 +60,10 @@
 
 html{
     scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

@@ -1,44 +1,99 @@
 @import url(../../main.css);
 
-.title-skill{
+.wrapper-s{
+    display: flex;
+    grid-gap: 2rem;
+    flex-direction: row-reverse;
+    background-color: var(--mainColor);
+    padding: 0 0 20rem 0;
+}
+
+.title-skill {
     font-size: var(--text-8xl-font-size);
     line-height: var(--text-8xl-line-height);
     color: var(--textColor);
     text-align: right;
 }
+.container-skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    flex-grow: 1;
+    height: 130px;
+    background-color: var(--mainColor);
+    position: relative;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    transition: 1s all ease;
+}
+
+.skill:hover {
+    border: 1px solid var(--secondaryColor);
+}
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .title-skill{
+    .title-skill {
         font-size: var(--text-5xl-font-size);
+    }
+
+    .wrapper-s{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill{
+        width: 45%;
     }
 }
 
 /* (480x800) Android */
 @media only screen and (min-width: 480px) and (max-width: 800px) {
-    .title-skill{
+    .title-skill {
         font-size: var(--text-5xl-font-size);
+    }
+
+    .wrapper-s{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill{
+        width: 30%;
     }
 }
 
 /* (640x960) iPhone 4 & 4S */
 @media only screen and (min-width: 640px) and (max-width: 960px) {
-    .title-skill{
+    .title-skill {
         font-size: var(--text-5xl-font-size);
     }
 }
 
 /* (720x1280) Galaxy Nexus, WXGA */
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
-    .title-skill{
+    .title-skill {
         font-size: var(--text-5xl-font-size);
     }
 }
 
 
 /* (1024x768) iPad 1 & 2, XGA */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
 
 /* (2048x1536) iPad 3 */
 @media only screen and (min-width: 1536px) and (max-width: 2048px) {
@@ -51,21 +106,16 @@
 }
 
 /* (1280x1024) SXGA Display */
-@media screen and (min-width: 1280px) {
-}
+@media screen and (min-width: 1280px) {}
 
 /* (1366x768) WXGA Display */
-@media screen and (min-width: 1366px) {
-}
+@media screen and (min-width: 1366px) {}
 
 /* (1440x900) WXGA+ Display */
-@media screen and (min-width: 1440px) {
-}
+@media screen and (min-width: 1440px) {}
 
 /* (1680x1050) WSXGA+ Display */
-@media screen and (min-width: 1680px) {
-}
+@media screen and (min-width: 1680px) {}
 
 /* (1920x1080) Full HD Display */
-@media screen and (min-width: 1920px) {
-}
+@media screen and (min-width: 1920px) {}
