@@ -31,12 +31,12 @@
 
 .slide-container:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #242424);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--mainColor));
 }
 
 .slide-container:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #242424);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--mainColor));
 }
 
 .slide-container:hover .slide {
@@ -48,11 +48,16 @@
     animation: 20s slide infinite linear;
 }
 
+.slide .color-text{
+    color: var(--secondaryColor);
+}
+
 .slide h1 {
     height: 50px;
     margin: 0 25px;
-    font-size: 100px;
-    font-weight: 20;
+    font-size: var(--text-8xl-font-size);
+    line-height: var(--text-8xl-line-height);
+    font-weight: 200;
     color: var(--textColor);
 }
 
@@ -71,20 +76,24 @@
 }
 
 .company p{
-    font-size: 20px;
+    font-size: var(--text-xl-font-size);
+    line-height: var(--text-xl-line-height);
     font-weight: 300;
 }
 
 .company h1{
-    font-size: 30px;
+    font-size: var(--text-3xl-font-size);
+    line-height: var(--text-3xl-line-height);
 }
 
 .office h1{
-    font-size: 30px;
+    font-size: var(--text-3xl-font-size);
+    line-height: var(--text-3xl-line-height);
 }
 
 .office p{
-    font-size: 20px;
+    font-size: var(--text-xl-font-size);
+    line-height: var(--text-xl-line-height);
     font-weight: 300;
 }
 
@@ -100,11 +109,13 @@
     padding: 10px;
     text-align: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--text-sm-font-size);
+    line-height: var(--text-sm-line-height);
 }
 
 .work-date{
-    font-size: 16px;
+    font-size: var(--text-xl-font-size);
+    line-height: var(--text-xl-line-height);
 }
 
 /* (320x480) iPhone (Original, 3G, 3GS) */

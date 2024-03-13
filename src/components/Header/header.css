@@ -33,7 +33,8 @@ header .nav-btn{
     color: var(--textColor);
     visibility: hidden;
     opacity: 0;
-    font-size: 1.8rem;
+    font-size: var(--text-base-font-size);
+    line-height: var(--text-base-line-height);
 }
 
 @media only screen and (max-width: 1024px){
@@ -70,6 +71,6 @@ header .nav-btn{
     }
 
     nav a{
-        font-size: 1.5rem;
+        font-size: var(--text-base-font-size);
     }
 }

@@ -1,36 +1,38 @@
 @import url(../../main.css);
 
-.container-content{
+.container-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 100vh;
 }
 
-.container-name{
+.container-name {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
 }
 
-.title{
-    font-size: 50px;
+.title {
+    font-size: var(--text-5xl-font-size);
+    line-height: var(--text-5xl-line-height);
     font-weight: 600;
     color: var(--secondaryColor);
 }
 
-.name{
-    font-size: 200px;
+.name {
+    font-size: var(--text-10xl-font-size);
     font-weight: 800;
     color: var(--textColor);
+    line-height: var(--text-9xl-line-height);
 }
 
-.description{
+.description {
     font-size: 25px;
     font-weight: 600;
     color: var(--secondaryColor);
 }
 
-.container-social{
+.container-social {
     color: var(--textColor);
     display: flex;
     flex-direction: column;
@@ -40,17 +42,18 @@
     gap: 2rem;
 }
 
-.container-social .icon{
-    font-size: 30px;
+.container-social .icon {
+    font-size: var(--text-3xl-font-size);
+    line-height: var(--text-3xl-line-height);
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
-.container-social .icon:hover{
+.container-social .icon:hover {
     color: var(--secondaryColor);
 }
 
-.container-loader{
+.container-loader {
     display: flex;
     grid-column: span 3;
     justify-content: center;
@@ -60,116 +63,120 @@
     width: 30px;
     height: 50px;
     box-sizing: border-box;
-    border: 2px solid var(--textColor);;
+    border: 2px solid var(--textColor);
+    ;
     position: relative;
     border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
-  }
-  
-  .loader::before {
+}
+
+.loader::before {
     content: '';
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50% , 50%);
+    transform: translate(-50%, 50%);
     width: 10px;
     height: 10px;
-    background: var(--textColor);;
+    background: var(--textColor);
+    ;
     border-radius: 50%;
     animation: fadeDown 1s ease-out infinite;
-  }
-  
-  @keyframes fadeDown {
+}
+
+@keyframes fadeDown {
     0% {
-      top: 0%;
-      opacity: 1;
+        top: 0%;
+        opacity: 1;
     }
+
     100% {
-      top: 60%;
-      opacity: 0;
+        top: 60%;
+        opacity: 0;
     }
-  }
+}
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .container-content{
+    .container-content {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
     }
 
-    .container-social{
+    .container-social {
         flex-direction: row;
     }
 
-    .title{
-        font-size: 25px
+    .title {
+        font-size: var(--text-2xl-font-size);
+        line-height: var(--text-2xl-line-height);
     }
 
-    .name{
-        font-size: 90px;
+    .name {
+        font-size: var(--text-7xl-font-size);
+        line-height: var(--text-7xl-line-height);
     }
 
-    .description{
-        font-size: 20px;
+    .description {
+        font-size: var(--text-xl-font-size);
+        line-height: var(--text-xl-line-height);
     }
 
-    .container-loader{
-        height: 30vh;
+    .container-loader {
+        padding: 0 0 10rem 0;
     }
 }
 
 /* (480x800) Android */
 @media only screen and (min-width: 480px) and (max-width: 800px) {
-    .container-content{
+    .container-content {
         display: flex;
         flex-direction: column;
     }
 
-    .container-social{
+    .container-social {
         flex-direction: row;
     }
-    
-    .container-loader{
-        height: 50vh;
+
+    .container-loader {
+        padding: 0 0 10rem 0;
     }
 }
 
 /* (640x960) iPhone 4 & 4S */
 @media only screen and (min-width: 640px) and (max-width: 960px) {
-    .container-content{
+    .container-content {
         display: flex;
         flex-direction: column;
     }
 
-    .container-social{
+    .container-social {
         flex-direction: row;
     }
 
-    .container-loader{
-        height: 30vh;
+    .container-loader {
+        padding: 0 0 10rem 0;
     }
 }
 
 /* (720x1280) Galaxy Nexus, WXGA */
-@media only screen and (min-width: 720px) and (max-width: 1280px) {
-
-}
+@media only screen and (min-width: 720px) and (max-width: 1280px) {}
 
 
 /* (1024x768) iPad 1 & 2, XGA */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .container-content{
+    .container-content {
         display: flex;
         flex-direction: column;
     }
 
-    .container-social{
+    .container-social {
         flex-direction: row;
     }
 
-    .container-loader{
-        height: 30vh;
+    .container-loader {
+        padding: 0 0 10rem 0;
     }
 }
 
@@ -184,21 +191,16 @@
 }
 
 /* (1280x1024) SXGA Display */
-@media screen and (min-width: 1280px) {
-}
+@media screen and (min-width: 1280px) {}
 
 /* (1366x768) WXGA Display */
-@media screen and (min-width: 1366px) {
-}
+@media screen and (min-width: 1366px) {}
 
 /* (1440x900) WXGA+ Display */
-@media screen and (min-width: 1440px) {
-}
+@media screen and (min-width: 1440px) {}
 
 /* (1680x1050) WSXGA+ Display */
-@media screen and (min-width: 1680px) {
-}
+@media screen and (min-width: 1680px) {}
 
 /* (1920x1080) Full HD Display */
-@media screen and (min-width: 1920px) {
-}
+@media screen and (min-width: 1920px) {}
