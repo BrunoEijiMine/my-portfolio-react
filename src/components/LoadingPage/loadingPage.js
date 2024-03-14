@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import "../LoadingPage/loadingPage.css";
 
 function LoadingPage() {
@@ -7,15 +6,30 @@ function LoadingPage() {
   const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
+    const disableScroll = () => {
+      document.body.style.overflow = "hidden";
+    };
+
+    const enableScroll = () => {
+      document.body.style.overflow = "auto";
+    };
+
     const loadingPage = setTimeout(() => {
       if (introStep < 6) {
         setIntroStep((prevStep) => prevStep + 1);
       } else {
         setShowIntro(false);
+        enableScroll();
       }
     }, 350);
 
-    return () => clearTimeout(loadingPage);
+    // Desabilita o scroll ao montar o componente
+    disableScroll();
+
+    return () => {
+      clearTimeout(loadingPage);
+      enableScroll(); 
+    };
   }, [introStep]);
 
   return (
@@ -66,3 +80,4 @@ function LoadingPage() {
 }
 
 export default LoadingPage;
+
