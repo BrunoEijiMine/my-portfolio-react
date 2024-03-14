@@ -12,6 +12,12 @@ function LoadingPage() {
 
     const enableScroll = () => {
       document.body.style.overflow = "auto";
+      const introContainer = document.getElementById("intro-container");
+      if (introContainer) {
+        setTimeout(() => {
+          introContainer.parentNode.removeChild(introContainer);
+        }, 1000);
+      }
     };
 
     const loadingPage = setTimeout(() => {
@@ -28,7 +34,6 @@ function LoadingPage() {
 
     return () => {
       clearTimeout(loadingPage);
-      enableScroll(); 
     };
   }, [introStep]);
 
@@ -80,4 +85,3 @@ function LoadingPage() {
 }
 
 export default LoadingPage;
-
