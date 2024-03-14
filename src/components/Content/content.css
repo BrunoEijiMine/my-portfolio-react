@@ -23,11 +23,11 @@
     font-size: var(--text-10xl-font-size);
     font-weight: 800;
     color: var(--textColor);
-    line-height: var(--text-9xl-line-height);
+    line-height: 2;
 }
 
 .description {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
     color: var(--secondaryColor);
 }
@@ -115,7 +115,7 @@
 
     .name {
         font-size: var(--text-7xl-font-size);
-        line-height: var(--text-7xl-line-height);
+        line-height: 1.5;
     }
 
     .description {
@@ -142,6 +142,11 @@
     .container-loader {
         padding: 0 0 10rem 0;
     }
+
+    .name {
+        font-size: var(--text-7xl-font-size);
+        line-height: 1.5;
+    }
 }
 
 /* (640x960) iPhone 4 & 4S */
@@ -149,6 +154,7 @@
     .container-content {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     .container-social {
@@ -157,6 +163,11 @@
 
     .container-loader {
         padding: 0 0 10rem 0;
+    }
+
+    .name {
+        font-size: var(--text-7xl-font-size);
+        line-height: 1.5;
     }
 }
 

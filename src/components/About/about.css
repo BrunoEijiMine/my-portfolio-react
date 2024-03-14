@@ -5,12 +5,13 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     background-color: var(--mainColor);
-    padding: 0 0 20rem 0;
+    height: 100vh;
+    /* padding: 0 0 20rem 0; */
 }
 
 .title-about {
     font-size: var(--text-8xl-font-size);
-    line-height: var(--text-8xl-line-height);
+    line-height: 2;
     color: var(--textColor);
 }
 
@@ -45,15 +46,16 @@
         flex-wrap: wrap;
         flex-direction: column;
         padding: 0;
+        height: auto;
     }
 
     .parallax {
         height: 400px;
+        margin-top: 2rem;
     }
 
     .title-about {
         font-size: var(--text-5xl-font-size);
-        line-height: var(--text-5xl-line-height);
         text-align: center;
     }
 
@@ -68,11 +70,17 @@
         grid-template-columns: none;
         grid-gap: 0;
         padding: 0;
+        height: auto;
+    }
+
+    .title-about {
+        text-align: center;
     }
 
     .parallax {
         height: 400px;
         background-position: center;
+        margin-top: 2rem;
     }
 
     .about:nth-of-type(1) {
@@ -87,11 +95,17 @@
         grid-template-columns: none;
         grid-gap: 0;
         padding: 0;
+        height: auto;
+    }
+
+    .title-about {
+        text-align: center;
     }
 
     .parallax {
         height: 400px;
         background-position: center;
+        margin-top: 2rem;
     }
 
     .about:nth-of-type(1) {
@@ -107,9 +121,14 @@
         padding: 0;
     }
 
+    .title-about {
+        text-align: center;
+    }
+
     .parallax {
         height: 400px;
         background-position: center;
+        margin-top: 2rem;
     }
 
     .about:nth-of-type(1) {
@@ -124,6 +143,10 @@
         grid-template-columns: none;
         grid-gap: 0;
         padding: 0;
+    }
+
+    .title-about {
+        text-align: center;
     }
 
     .parallax {

@@ -15,7 +15,7 @@ function Work() {
     }, []);
 
     return (
-        <section>
+        <section className='wrapper-work'>
             <div className="slide-container">
                 <div className="slide">
                     <h1>WORK</h1>

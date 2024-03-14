@@ -21,13 +21,15 @@ function LoadingPage() {
     };
 
     const loadingPage = setTimeout(() => {
-      if (introStep < 6) {
-        setIntroStep((prevStep) => prevStep + 1);
+      if (introStep < 7) {
+        setTimeout(() => {
+          setIntroStep((prevStep) => prevStep + 1);
+        }, 400);
       } else {
         setShowIntro(false);
         enableScroll();
       }
-    }, 350);
+    }, 1000);
 
     // Desabilita o scroll ao montar o componente
     disableScroll();
@@ -47,37 +49,42 @@ function LoadingPage() {
           className="text-intro"
           style={{ display: introStep === 1 ? "block" : "none" }}
         >
-          Transformando
+          BRUNO EIJI
         </h1>
         <h1
           className="text-intro"
           style={{ display: introStep === 2 ? "block" : "none" }}
         >
-          códigos
+          DEVELOPER
         </h1>
         <h1
           className="text-intro"
           style={{ display: introStep === 3 ? "block" : "none" }}
         >
-          em
+          FRONT END
         </h1>
         <h1
           className="text-intro"
           style={{ display: introStep === 4 ? "block" : "none" }}
         >
-          experiências
+          UI/UX
         </h1>
         <h1
           className="text-intro"
           style={{ display: introStep === 5 ? "block" : "none" }}
         >
-          digitais
+          GRAPHIC DESIGNER
         </h1>
         <h1
           className="text-intro"
           style={{ display: introStep === 6 ? "block" : "none" }}
         >
-          surpreendentes
+          WELCOME
+        </h1>
+        <h1
+          className="text-intro loader-page"
+          style={{ display: introStep === 7 ? "block" : "none" }}
+        >
         </h1>
       </div>
     </div>
