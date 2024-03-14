@@ -51,8 +51,11 @@
 
     .parallax {
         height: 400px;
-        margin-top: 2rem;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
     }
+    
 
     .title-about {
         font-size: var(--text-5xl-font-size);
