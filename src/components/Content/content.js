@@ -1,13 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTwitter,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-
+import { faInstagram, faTwitter, faGithub,} from "@fortawesome/free-brands-svg-icons";
 import "../Content/content.css";
 
 function Header() {
+
   return (
     <div className="container-content">
       <div className="container-name">

@@ -1,12 +1,19 @@
+import React, { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import "../About/about.css";
 
 function About() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <div className="container-about">
       <div>
-        <h1 className="title-about">SOBRE MIM</h1>
-        <section className="about">
-          <p className="gradient-text"></p>
+        <h1 className="title-about" data-aos="fade-down">SOBRE MIM</h1>
+        <section className="about" data-aos="fade-up">
           <span>
             Olá, sou Bruno Eiji, mas prefiro ser chamado de Eiji. É um prazer
             conhecê-lo! Há dois anos, entrei de cabeça no universo da
@@ -19,7 +26,7 @@ function About() {
           </span>
         </section>
       </div>
-      <section>
+      <section >
         <div class="parallax"></div>
       </section>
     </div>
