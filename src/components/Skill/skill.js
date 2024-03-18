@@ -8,7 +8,7 @@ import psIcon from "../../img/photoshop.svg"
 import figmaIcon from "../../img/figma.svg"
 
 function Skill() {
-  
+
   return (
     <div className="wrapper-s">
       <h1 className="title-skill">HABILIDADES</h1>

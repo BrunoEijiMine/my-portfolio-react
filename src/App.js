@@ -4,6 +4,7 @@ import Content from "./components/Content/content";
 import Skill from "./components/Skill/skill";
 import Work from "./components/Work/work";
 import About from "./components/About/about";
+import BackToTop from "./components/BackToTop/backToTop";
 import styled from "styled-components";
 import "./main.css";
 
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Work />
         <Skill />
+        <BackToTop />
       </AppContainer>
   );
 }

@@ -1,0 +1,44 @@
+@import url(../../main.css);
+
+:root {
+    --backgroundButton: #1f2937;
+}
+
+.custom-button {
+    width: 3rem;
+    height: 3rem;
+    z-index: 50;
+    background-color: var(--backgroundButton);
+    color: var(--textColor);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    -webkit-box-shadow: 0 10px 10px 0 rgba(219, 234, 254, 1);
+    -moz-box-shadow: 0 10px 10px 0 rgba(219, 234, 254, 1);
+    box-shadow: 0 10px 10px 0 rgba(219, 234, 254, 1);
+    animation: bounce 0.5s infinite alternate;
+}
+
+.icon {
+    font-size: 0.8rem;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
