@@ -33,7 +33,6 @@
 }
 
 .container-social {
-    color: var(--textColor);
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -46,6 +45,7 @@
     font-size: var(--text-3xl-font-size);
     line-height: var(--text-3xl-line-height);
     cursor: pointer;
+    color: var(--textColor);
     transition: 0.3s ease-in-out;
 }
 

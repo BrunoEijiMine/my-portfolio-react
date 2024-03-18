@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faTwitter, faGithub,} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faGithub, faLinkedinIn,} from "@fortawesome/free-brands-svg-icons";
 import "../Content/content.css";
 
 function Header() {
@@ -16,10 +16,16 @@ function Header() {
       </div>
 
       <div className="container-social">
+      <a href="https://www.instagram.com/brunoeiji1/" target="_blank" rel="noopener noreferrer" title="Instagram">
         <FontAwesomeIcon className="icon" icon={faInstagram} />
-        <FontAwesomeIcon className="icon" icon={faTwitter} />
+      </a>
+      <a href="https://www.linkedin.com/in/bruno-eiji-1b47b1206/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+      </a>
+      <a href="https://github.com/BrunoEijiMine" target="_blank" rel="noopener noreferrer" title="Github">
         <FontAwesomeIcon className="icon" icon={faGithub} />
-      </div>
+      </a>
+    </div>
 
       <div className="container-loader">
         <span class="loader"></span>
