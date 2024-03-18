@@ -41,15 +41,26 @@ function LoadingPage() {
 
   useEffect(() => {
     if (!showIntro) {
-      document.body.style.transition = "opacity 0.5s ease-in-out";
-      document.body.style.opacity = "0";
-      document.body.classList.add("slide-in");
-      document.body.style.backgroundColor = "#030712";
+      const overlay = document.createElement("div");
+      overlay.style.position = "fixed";
+      overlay.style.top = "0";
+      overlay.style.left = "0";
+      overlay.style.width = "100%";
+      overlay.style.height = "100%";
+      overlay.style.backgroundColor = "var(--textColor)";
+      overlay.style.opacity = "0";
+      overlay.style.transition = "opacity 0.5s ease-in-out";
+      document.body.appendChild(overlay);
+  
+      setTimeout(() => {
+        overlay.style.opacity = "1";
+      }, 50);
   
       const opacityTimer = setTimeout(() => {
-        document.body.style.transition = "";
-        document.body.style.opacity = "";
-        document.body.classList.remove("slide-in");
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+          document.body.removeChild(overlay);
+        }, 500); // Tempo correspondente à duração da transição
       }, 1500); 
   
       return () => clearTimeout(opacityTimer);
