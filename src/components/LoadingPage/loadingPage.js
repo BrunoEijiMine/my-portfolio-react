@@ -14,6 +14,12 @@ function LoadingPage() {
     // Constancia que habilitar o scroll
     const enableScroll = () => {
       document.body.style.overflow = "auto";
+      const introContainer = document.getElementById("intro-container");
+      if (introContainer) {
+        setTimeout(() => {
+          introContainer.parentNode.removeChild(introContainer);
+        }, 500);
+      }
     };
 
     // Desabilita o scroll ao montar o componente
