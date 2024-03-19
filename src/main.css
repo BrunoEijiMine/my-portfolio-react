@@ -72,6 +72,15 @@
     --text-10xl-line-height: 1;
 }
 
+::-webkit-scrollbar {
+  width: 2px;
+  background: var(--mainColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondaryColor);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -89,6 +98,7 @@ img {
     height: auto;
     display: block;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

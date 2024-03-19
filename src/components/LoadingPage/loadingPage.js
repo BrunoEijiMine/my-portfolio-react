@@ -6,20 +6,20 @@ function LoadingPage() {
   const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
+    // MOntando uma costancia que esconde/desabilita o scroll
     const disableScroll = () => {
       document.body.style.overflow = "hidden";
     };
 
+    // Constancia que habilitar o scroll
     const enableScroll = () => {
       document.body.style.overflow = "auto";
-      const introContainer = document.getElementById("intro-container");
-      if (introContainer) {
-        setTimeout(() => {
-          introContainer.parentNode.removeChild(introContainer);
-        }, 500);
-      }
     };
 
+    // Desabilita o scroll ao montar o componente
+    disableScroll();
+
+    // Começo para montar o loading
     const loadingPage = setTimeout(() => {
       if (introStep < 7) {
         setTimeout(() => {
@@ -31,9 +31,6 @@ function LoadingPage() {
       }
     }, 500);
 
-    // Desabilita o scroll ao montar o componente
-    disableScroll();
-
     return () => {
       clearTimeout(loadingPage);
     };
@@ -41,33 +38,24 @@ function LoadingPage() {
 
   useEffect(() => {
     if (!showIntro) {
-      const overlay = document.createElement("div");
-      overlay.style.position = "fixed";
-      overlay.style.top = "0";
-      overlay.style.left = "0";
-      overlay.style.width = "100%";
-      overlay.style.height = "100%";
-      overlay.style.backgroundColor = "var(--textColor)";
-      overlay.style.opacity = "0";
-      overlay.style.transition = "opacity 0.5s ease-in-out";
-      document.body.appendChild(overlay);
-  
-      setTimeout(() => {
-        overlay.style.opacity = "1";
-      }, 50);
-  
+      document.body.style.transition = "opacity 0.5s ease-in-out";
+      document.body.style.opacity = "0";
+      document.body.classList.add("slide-in");
+      document.body.style.backgroundColor = "var(--background)";
+
       const opacityTimer = setTimeout(() => {
-        overlay.style.opacity = "0";
+        document.body.classList.remove("slide-in");
+
         setTimeout(() => {
-          document.body.removeChild(overlay);
-        }, 500); // Tempo correspondente à duração da transição
-      }, 1500); 
-  
+          document.body.style.transition = "";
+          document.body.style.opacity = "";
+        }, 200);
+
+      }, 1500);
+
       return () => clearTimeout(opacityTimer);
     }
   }, [showIntro]);
-  
-  
 
   return (
     <div id="intro-container" className={`intro ${showIntro ? "visible" : "hidden"}`}>
@@ -95,7 +83,7 @@ function LoadingPage() {
       </div>
     </div>
   );
-  
+
 }
 
 export default LoadingPage;

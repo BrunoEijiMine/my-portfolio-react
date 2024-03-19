@@ -38,7 +38,7 @@
     position: relative;
     border: 1px solid var(--borderColor);
     border-radius: 4px;
-    transition: 1s all ease;
+    transition: 1s all ease !important;
 }
 
 .skill:hover {
