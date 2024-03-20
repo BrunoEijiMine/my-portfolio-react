@@ -47,7 +47,7 @@
 }
 
 .skill:hover {
-    border: 1px solid var(--textColor);
+    border: 1px solid var(--text-c);
 }
 
 /* (320x480) iPhone (Original, 3G, 3GS) */

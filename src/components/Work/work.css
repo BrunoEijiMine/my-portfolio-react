@@ -18,30 +18,32 @@
 
 .slide-container {
     overflow: hidden;
-    padding: 60px 0;
+    padding: 10px 0;
     white-space: nowrap;
     position: relative;
+    margin: 80px 0;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 40%, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 95%);
 }
 
-.slide-container:before,
-.slide-container:after {
+.slide-container::before,
+.slide-container::after {
+    content: '';
     position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-}
-
-.slide-container:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--mainColor));
+    right: 0;
+    height: 1px;
+    /* Altura da borda, ajuste conforme necessário */
+    background: radial-gradient(50% 132.7% at 50% 50%, #ffffff 17.71773604659347%, rgba(128, 128, 128, .15) 63.66368199253942%);
 }
 
-.slide-container:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--mainColor));
+.slide-container::before {
+    top: 0;
 }
+
+.slide-container::after {
+    bottom: 0;
+}
+
 
 .slide-container:hover .slide {
     animation-play-state: paused;
@@ -69,7 +71,6 @@
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    /* margin: 0 0 20rem 0; */
 }
 
 .work-container {
@@ -83,6 +84,8 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%, rgba(26, 26, 26, 1) 100%);
+    padding: 2rem;
 }
 
 .company p {
@@ -94,11 +97,27 @@
 .company h1 {
     font-size: var(--text-3xl-font-size);
     line-height: var(--text-3xl-line-height);
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgb(102, 102, 102) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.office {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%, rgba(26, 26, 26, 1) 100%);
+    padding: 2rem;
 }
 
 .office h1 {
     font-size: var(--text-3xl-font-size);
     line-height: var(--text-3xl-line-height);
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgb(102, 102, 102) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .office p {

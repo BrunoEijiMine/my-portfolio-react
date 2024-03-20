@@ -9,7 +9,7 @@
 .container-name {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .title {
@@ -121,7 +121,7 @@
     }
 
     .name {
-        font-size: var(--text-7xl-font-size);
+        font-size: var(--text-5xl-font-size);
         line-height: 1.5;
     }
 

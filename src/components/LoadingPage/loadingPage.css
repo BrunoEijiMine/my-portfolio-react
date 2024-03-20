@@ -24,7 +24,10 @@
 }
 
 .text-intro {
-    color: var(--textColor);
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgb(102, 102, 102) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 6vw;
     font-weight: 400;
     white-space: nowrap;
@@ -94,16 +97,16 @@
 
 @keyframes fadeIn {
     0% {
-      opacity: 0;
-      transform: translateY(-10px);
+        opacity: 0;
+        transform: translateY(-10px);
     }
+
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  .fade-in {
+}
+
+.fade-in {
     animation: fadeIn 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
-  }
-  
+}
