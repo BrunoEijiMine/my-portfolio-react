@@ -12,7 +12,10 @@
 .title-about {
     font-size: var(--text-8xl-font-size);
     line-height: 2;
-    color: var(--textColor);
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgb(102, 102, 102) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /* PICTURE ME */
@@ -37,6 +40,40 @@
     font-size: var(--text-lg-font-size);
     line-height: var(--text-lg-line-height);
     font-weight: 300;
+}
+
+.container-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    flex-grow: 1;
+    height: 130px;
+    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%, rgba(26, 26, 26, 1) 100%);
+    position: relative;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    transition: 1s all ease !important;
+}
+
+.service h1 {
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgb(102, 102, 102) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /* (320x480) iPhone (Original, 3G, 3GS) */

@@ -1,7 +1,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg height="64px" width="64px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+<svg fill="#ffffff" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" stroke="#ffffff">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#dbeafe;} </style> <g> <polygon class="st0" points="193.431,261.016 211.237,261.016 318.569,261.016 312.062,334.41 256,348.67 199.938,334.41 196.059,290.703 138.856,290.703 146.742,379.683 256,407.465 365.262,379.683 380.403,208.788 188.801,208.788 183.74,151.682 385.467,151.682 390.52,94.696 121.481,94.696 136.224,261.016 "/> <path class="st0" d="M20.366,0l0.984,10.627l41.882,452.361L256,512l192.767-49.012L491.634,0H20.366z M402.505,423.462 L256,460.713l-146.505-37.251L74.888,49.711h362.223L402.505,423.462z"/> </g> </g>
+<g id="SVGRepo_iconCarrier">
+<path d="M3.1825,2.00012,4.78735,20.00079l7.20191,1.99933,7.22168-2.00207L20.8175,2.00012ZM17.32507,7.88739H8.87683l.20178,2.26074h8.04554l-.60584,6.778L12,18.17834v.00043l-.01013.00275L7.46753,16.92615,7.1582,13.45972H9.37439l.1571,1.76074,2.45874.66388.00208-.00049v-.00018l2.46228-.66461.25635-2.86323H7.05957L6.46411,5.67969h11.0586Z"/>
+</g>
 </svg>

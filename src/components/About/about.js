@@ -25,6 +25,17 @@ function About() {
             da tecnologia.
           </span>
         </section>
+        <div className="container-service">
+          <article className="service" data-aos="flip-left">
+            <h1>TESTE</h1>
+          </article>
+          <article className="service" data-aos="flip-right">
+            <h1>TESTE</h1>
+          </article>
+          <article className="service" data-aos="flip-up">
+            <h1>TESTE</h1>
+          </article>
+        </div>
       </div>
       <section >
         <div class="parallax"></div>

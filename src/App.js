@@ -16,14 +16,14 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-        <LoadingPage />
-        <Header />
-        <Content />
-        <About />
-        <Work />
-        <Skill />
-        <BackToTop />
-      </AppContainer>
+      <LoadingPage />
+      <Header />
+      <Content />
+      <About />
+      <Work />
+      <Skill />
+      <BackToTop />
+    </AppContainer>
   );
 }
 

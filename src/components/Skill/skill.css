@@ -1,6 +1,6 @@
 @import url(../../main.css);
 
-.wrapper-s{
+.wrapper-s {
     display: flex;
     grid-gap: 2rem;
     flex-direction: row-reverse;
@@ -11,10 +11,14 @@
 .title-skill {
     font-size: var(--text-8xl-font-size);
     line-height: var(--text-8xl-line-height);
-    color: var(--textColor);
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgb(102, 102, 102) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     text-align: right;
 }
-.container-skill{
+
+.container-skill {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +38,8 @@
     width: 20%;
     flex-grow: 1;
     height: 130px;
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
+    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%, rgba(26, 26, 26, 1) 100%);
     position: relative;
     border: 1px solid var(--borderColor);
     border-radius: 4px;
@@ -42,8 +47,8 @@
 }
 
 .skill:hover {
-    border: 1px solid var(--secondaryColor);
-} 
+    border: 1px solid var(--textColor);
+}
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -51,12 +56,12 @@
         font-size: var(--text-5xl-font-size);
     }
 
-    .wrapper-s{
+    .wrapper-s {
         flex-direction: column;
         align-items: center;
     }
 
-    .skill{
+    .skill {
         width: 45%;
     }
 }
@@ -67,12 +72,12 @@
         font-size: var(--text-5xl-font-size);
     }
 
-    .wrapper-s{
+    .wrapper-s {
         flex-direction: column;
         align-items: center;
     }
 
-    .skill{
+    .skill {
         width: 30%;
     }
 }
