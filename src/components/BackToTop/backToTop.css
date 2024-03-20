@@ -1,14 +1,10 @@
 @import url(../../main.css);
 
-:root {
-    --backgroundButton: #1f2937;
-}
-
 .custom-button {
     width: 3rem;
     height: 3rem;
     z-index: 50;
-    background-color: var(--backgroundButton);
+    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%, rgba(26, 26, 26, 1) 100%);
     color: var(--textColor);
     border-radius: 50%;
     border: none;
@@ -23,9 +19,9 @@
 }
 
 .custom-button:hover {
-    -webkit-box-shadow: 0 10px 10px 0 rgba(219, 234, 254, 1);
-    -moz-box-shadow: 0 10px 10px 0 rgba(219, 234, 254, 1);
-    box-shadow: 0 10px 10px 0 rgba(219, 234, 254, 1);
+    -webkit-box-shadow: 0 10px 10px 0 rgb(255, 255, 255);
+    -moz-box-shadow: 0 10px 10px 0 rgb(255, 255, 255);
+    box-shadow: 0 10px 10px 0 rgb(255, 255, 255);
     animation: bounce 0.5s infinite alternate;
 }
 
