@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    align-items: center;
     background-color: var(--mainColor);
     height: 80vh;
     /* padding: 0 0 20rem 0; */
@@ -51,15 +52,13 @@
     padding: 8px;
     width: 100%;
     gap: 0.5rem;
+    margin: 2rem 0;
 }
 
 .service {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 20%;
+    width: 40%;
     flex-grow: 1;
     height: 130px;
     background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%, rgba(26, 26, 26, 1) 100%);
@@ -67,13 +66,24 @@
     border: 1px solid var(--borderColor);
     border-radius: 4px;
     transition: 1s all ease !important;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.service h1 {
+.service p {
     background-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgb(102, 102, 102) 100%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    font-size: var(--text-lg-font-size);
+}
+
+.iconService {
+    font-size: var(--text-3xl-font-size);
+    color: var(--textColor);
+    padding: 1rem;
+    border-radius: 4px;
 }
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
@@ -82,6 +92,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: normal;
         padding: 0;
         height: auto;
     }
@@ -101,6 +112,17 @@
 
     .about:nth-of-type(1) {
         text-align: center;
+    }
+
+    .service {
+        width: 40%;
+    }
+
+    .service p {
+        font-size: var(--text-sm-font-size);
+        text-align: center;
+        word-wrap: break-word;
+        white-space: pre-wrap;
     }
 }
 
@@ -125,6 +147,17 @@
 
     .about:nth-of-type(1) {
         text-align: center;
+    }
+
+    .service {
+        width: 40%;
+    }
+
+    .service p {
+        font-size: var(--text-sm-font-size);
+        text-align: center;
+        word-wrap: break-word;
+        white-space: pre-wrap;
     }
 }
 
