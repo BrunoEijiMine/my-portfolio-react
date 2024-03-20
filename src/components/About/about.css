@@ -5,7 +5,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     background-color: var(--mainColor);
-    height: 100vh;
+    height: 80vh;
     /* padding: 0 0 20rem 0; */
 }
 
@@ -34,8 +34,8 @@
 /* CONTAINER ABOUT */
 .about:nth-of-type(1) {
     color: var(--textColor);
-    font-size: var(--text-xl-font-size);
-    line-height: var(--text-xl-line-height);
+    font-size: var(--text-lg-font-size);
+    line-height: var(--text-lg-line-height);
     font-weight: 300;
 }
 
@@ -55,7 +55,7 @@
         background-size: cover;
         background-attachment: scroll;
     }
-    
+
 
     .title-about {
         font-size: var(--text-5xl-font-size);
