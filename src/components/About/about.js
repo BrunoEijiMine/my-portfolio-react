@@ -26,10 +26,16 @@ function About() {
           </span>
         </section>
         <div className="container-service">
-          <article className="service" data-aos="fade-down-right">
+          <article className="service"
+            data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
             <p>User Interface</p>
           </article>
-          <article className="service" data-aos="fade-down-left">
+          <article className="service"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
             <p>User Experience Design</p>
           </article>
           <article className="service" data-aos="fade-up">
