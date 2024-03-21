@@ -5,6 +5,7 @@ import Skill from "./components/Skill/skill";
 import Work from "./components/Work/work";
 import About from "./components/About/about";
 import BackToTop from "./components/BackToTop/backToTop";
+import Footer from "./components/Footer/footer";
 import styled from "styled-components";
 import "./main.css";
 
@@ -23,6 +24,7 @@ function App() {
       <Work />
       <Skill />
       <BackToTop />
+      <Footer />
     </AppContainer>
   );
 }

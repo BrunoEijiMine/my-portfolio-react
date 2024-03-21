@@ -87,7 +87,7 @@
     height: 10px;
     background: var(--textColor);
     border-radius: 50%;
-    animation: fadeDown 1s ease-out infinite;
+    animation: fadeDown 2s ease-out infinite;
 }
 
 @keyframes fadeDown {

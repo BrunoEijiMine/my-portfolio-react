@@ -27,15 +27,15 @@ function LoadingPage() {
 
     // Começo para montar o loading
     const loadingPage = setTimeout(() => {
-      if (introStep < 7) {
+      if (introStep < 6) {
         setTimeout(() => {
           setIntroStep((prevStep) => prevStep + 1);
-        }, 400);
+        }, 300);
       } else {
         setShowIntro(false);
         enableScroll();
       }
-    }, 500);
+    }, 300);
 
     return () => {
       clearTimeout(loadingPage);
@@ -57,7 +57,7 @@ function LoadingPage() {
           document.body.style.opacity = "";
         }, 200);
 
-      }, 1500);
+      }, 500);
 
       return () => clearTimeout(opacityTimer);
     }
@@ -70,21 +70,18 @@ function LoadingPage() {
           BRUNO EIJI
         </h1>
         <h1 className="text-intro" style={{ display: introStep === 2 ? "block" : "none" }}>
-          DEVELOPER
+          DEVELOPER FRONT END
         </h1>
         <h1 className="text-intro" style={{ display: introStep === 3 ? "block" : "none" }}>
-          FRONT END
-        </h1>
-        <h1 className="text-intro" style={{ display: introStep === 4 ? "block" : "none" }}>
           UI/UX
         </h1>
-        <h1 className="text-intro" style={{ display: introStep === 5 ? "block" : "none" }}>
+        <h1 className="text-intro" style={{ display: introStep === 4 ? "block" : "none" }}>
           GRAPHIC DESIGNER
         </h1>
-        <h1 className="text-intro" style={{ display: introStep === 6 ? "block" : "none" }}>
+        <h1 className="text-intro" style={{ display: introStep === 5 ? "block" : "none" }}>
           WELCOME
         </h1>
-        <h1 className="text-intro loader-page" style={{ display: introStep === 7 ? "block" : "none" }}>
+        <h1 className="text-intro loader-page" style={{ display: introStep === 6 ? "block" : "none" }}>
         </h1>
       </div>
     </div>
