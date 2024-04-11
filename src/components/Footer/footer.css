@@ -25,12 +25,23 @@
 }
 
 .footer-name {
-    font-size: 15vw;
+    font-size: 12vw;
 }
 
 .container-footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     width: 100%;
+}
+
+.container-footer .icon{
+    font-size: var(--text-3xl-font-size);
+    line-height: var(--text-3xl-line-height);
+    cursor: pointer;
+    color: var(--mainColor);
+}
+
+.container-footer .icon{
+    
 }
