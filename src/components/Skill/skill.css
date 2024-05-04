@@ -38,7 +38,6 @@
     width: 20%;
     flex-grow: 1;
     height: 130px;
-    /* background-color: var(--mainColor); */
     background: linear-gradient(90deg, rgba(37, 37, 37, 1) 0%, rgba(26, 26, 26, 1) 100%);
     position: relative;
     border: 1px solid var(--borderColor);
@@ -47,7 +46,7 @@
 }
 
 .skill:hover {
-    border: 1px solid var(--text-c);
+    border: 1px solid var(--textColor) !important;
 }
 
 /* (320x480) iPhone (Original, 3G, 3GS) */

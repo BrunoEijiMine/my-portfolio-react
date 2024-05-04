@@ -32,7 +32,6 @@
     left: 0;
     right: 0;
     height: 1px;
-    /* Altura da borda, ajuste conforme necessário */
     background: radial-gradient(50% 132.7% at 50% 50%, #ffffff 17.71773604659347%, rgba(128, 128, 128, .15) 63.66368199253942%);
 }
 
