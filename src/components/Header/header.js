@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import Skill from '../Skill/skill'
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import "../Header/header.css"
@@ -29,13 +30,13 @@ function Header() {
                 data-aos-delay="3000"
             />
             <nav ref={navRef}>
-                <a href=""
+                <a href="#"
                     data-aos="fade-down"
                     data-aos-delay="3000">
                     Inicio
                 </a>
 
-                <a href=""
+                <a href="#experiencia"
                     data-aos="fade-down"
                     data-aos-delay="3000">
                     Experiência

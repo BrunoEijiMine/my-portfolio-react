@@ -12,18 +12,20 @@ function Footer() {
     }, [])
 
     return (
-        <div className="footer"
-            data-aos="zoom-in-up"
-            data-aos-easing="linear">
-            <div className="footer-title">
-                <p className="footer-name">W3B D3S1GN</p>
+        <>
+            <div className="footer"
+                data-aos="zoom-in-up"
+                data-aos-easing="linear">
+                <div id="wrapper-circle"><span id="circle"></span></div>
+                <div className="container-title">
+                    <p className="title-footer">CONTATO</p>
+                </div>
             </div>
             <div className="container-footer">
                 <a href="https://www.instagram.com/brunoeiji1/"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Instagram"
-                    data-aos="fade-up"
                 >
                     <FontAwesomeIcon className="icon" icon={faInstagram} />
                 </a>
@@ -31,7 +33,6 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="LinkedIn"
-                    data-aos="fade-up"
                 >
                     <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
                 </a>
@@ -39,12 +40,11 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Github"
-                    data-aos="fade-up"
                 >
                     <FontAwesomeIcon className="icon" icon={faGithub} />
                 </a>
             </div>
-        </div>
+        </>
     );
 }
 

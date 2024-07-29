@@ -17,7 +17,7 @@ function Skill() {
   }, [])
 
   return (
-    <div className="wrapper-s" data-aos="fade-down">
+    <div className="wrapper-s" data-aos="fade-down" id="experiencia">
       <h1 className="title-skill" data-aos="fade-up">HABILIDADES</h1>
       <div className="container-skill">
         <article className="skill" data-aos="flip-left">

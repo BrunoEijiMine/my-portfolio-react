@@ -2,14 +2,41 @@
 
 .footer {
     background-color: var(--textColor);
-    height: 95vh;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    height: 330px;
+    -webkit-box-shadow: inset 0px -90px 112px 0px rgba(26,26,26,1);
+    -moz-box-shadow: inset 0px -90px 112px 0px rgba(26,26,26,1);
+    box-shadow: inset 0px -90px 112px 0px rgba(26,26,26,1);
 }
 
+#wrapper-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#circle {
+    display: block;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-footer {
+    position: absolute;
+    padding: 20px;
+    font-size: 15vw;
+    font-weight: 800;
+    color: var(--mainColor);
+    text-align: center;
+}
 
 .footer-title {
     display: flex;
@@ -24,24 +51,96 @@
     font-size: var(--text-xl-font-size);
 }
 
+
 .footer-name {
     font-size: 12vw;
 }
 
 .container-footer {
+    background-color: var(--mainColor);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
     width: 100%;
+    justify-items: center;
+    height: 300px;
+    align-items: center;
 }
 
-.container-footer .icon{
+.container-footer .icon {
     font-size: var(--text-3xl-font-size);
     line-height: var(--text-3xl-line-height);
     cursor: pointer;
-    color: var(--mainColor);
+    color: var(--textColor);
 }
 
-.container-footer .icon{
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .footer{
+        height: 200px;
+    }
     
+    #circle {
+        width: 150px;
+        height: 150px;
+    }
 }
+
+/* (480x800) Android */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+    .footer {
+        height: 260px;
+    }
+}
+
+/* (640x960) iPhone 4 & 4S */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .footer {
+        height: 260px;
+    }
+}
+
+/* (720x1280) Galaxy Nexus, WXGA */
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    .footer {
+        height: 260px;
+    }
+}
+
+
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+        height: 260px;
+    }
+}
+
+/* (2048x1536) iPad 3 */
+@media only screen and (min-width: 1536px) and (max-width: 2048px) {
+    /* insert styles here */
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    .footer {
+        height: 260px;
+    }
+}
+
+/* (1280x1024) SXGA Display */
+@media screen and (min-width: 1280px) {
+    .footer {
+        height: 260px;
+    }
+}
+
+/* (1366x768) WXGA Display */
+@media screen and (min-width: 1366px) {}
+
+/* (1440x900) WXGA+ Display */
+@media screen and (min-width: 1440px) {}
+
+/* (1680x1050) WSXGA+ Display */
+@media screen and (min-width: 1680px) {}
+
+/* (1920x1080) Full HD Display */
+@media screen and (min-width: 1920px) {}
