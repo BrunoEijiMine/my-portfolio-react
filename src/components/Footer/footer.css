@@ -1,68 +1,24 @@
 @import url(../../main.css);
 
-.footer {
-    background-color: var(--textColor);
-    height: 330px;
-    -webkit-box-shadow: inset 0px -90px 112px 0px rgba(26,26,26,1);
-    -moz-box-shadow: inset 0px -90px 112px 0px rgba(26,26,26,1);
-    box-shadow: inset 0px -90px 112px 0px rgba(26,26,26,1);
-}
-
-#wrapper-circle {
+footer{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-#circle {
-    display: block;
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 0px -46px 52px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px -46px 52px -8px rgba(0,0,0,0.75);
-    box-shadow: inset 0px -46px 52px -8px rgba(0,0,0,0.75);
-/* 
-    -webkit-box-shadow: 0px 31px 52px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 31px 52px -8px rgba(0,0,0,0.75);
-box-shadow: 0px 31px 52px -8px rgba(0,0,0,0.75); */
-
-}
-
-.container-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title-footer {
-    position: absolute;
-    padding: 20px;
-    font-size: 15vw;
-    font-weight: 800;
-    color: var(--mainColor);
-    text-align: center;
-}
-
-.footer-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 2rem;
-    height: 50vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-back-to-home {
-    font-size: var(--text-xl-font-size);
+footer p{
+    color: var(--textColor);
 }
 
-
-.footer-name {
-    font-size: 12vw;
-}
+.beta {
+    color: #3fb950;
+    border: 1px solid #3fb950;
+    border-radius: 9999px;
+    padding: 5px;
+    margin-left: 30px;
+    font-size: 10px;
+  }
 
 .container-footer {
     background-color: var(--mainColor);
@@ -83,43 +39,23 @@ box-shadow: 0px 31px 52px -8px rgba(0,0,0,0.75); */
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .footer{
-        height: 200px;
-    }
-    
-    #circle {
-        width: 150px;
-        height: 150px;
-    }
 }
 
 /* (480x800) Android */
 @media only screen and (min-width: 480px) and (max-width: 800px) {
-    .footer {
-        height: 260px;
-    }
 }
 
 /* (640x960) iPhone 4 & 4S */
 @media only screen and (min-width: 640px) and (max-width: 960px) {
-    .footer {
-        height: 260px;
-    }
 }
 
 /* (720x1280) Galaxy Nexus, WXGA */
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
-    .footer {
-        height: 260px;
-    }
 }
 
 
 /* (1024x768) iPad 1 & 2, XGA */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .footer {
-        height: 260px;
-    }
 }
 
 /* (2048x1536) iPad 3 */
@@ -129,16 +65,10 @@ box-shadow: 0px 31px 52px -8px rgba(0,0,0,0.75); */
 
 /* (1280x720) Galaxy Note 2, WXGA */
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
-    .footer {
-        height: 260px;
-    }
 }
 
 /* (1280x1024) SXGA Display */
 @media screen and (min-width: 1280px) {
-    .footer {
-        height: 260px;
-    }
 }
 
 /* (1366x768) WXGA Display */

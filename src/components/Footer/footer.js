@@ -12,19 +12,7 @@ function Footer() {
     }, [])
 
     return (
-        <>
-            <div className="footer" data-aos="fade">
-                <div id="wrapper-circle"
-                    data-aos="zoom-in-down"
-                    data-aos-easing="linear">
-                    <span id="circle"></span>
-                </div>
-                <div className="container-title">
-                    <p className="title-footer"
-                        data-aos="zoom-in-up"
-                        data-aos-easing="linear">CONTATO</p>
-                </div>
-            </div>
+        <footer>
             <div className="container-footer">
                 <a href="https://www.instagram.com/brunoeiji1/"
                     target="_blank"
@@ -51,7 +39,8 @@ function Footer() {
                     <FontAwesomeIcon className="icon" icon={faGithub} />
                 </a>
             </div>
-        </>
+            <p class="copyright">Bruno Eiji - © 2024 <span class="beta">Portfólio em desenvolvimento</span> </p>
+        </footer>
     );
 }
 
