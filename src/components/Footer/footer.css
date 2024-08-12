@@ -11,12 +11,18 @@ footer p{
     color: var(--textColor);
 }
 
+.copyright{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
 .beta {
     color: #3fb950;
     border: 1px solid #3fb950;
     border-radius: 9999px;
     padding: 5px;
-    margin-left: 30px;
     font-size: 10px;
   }
 
