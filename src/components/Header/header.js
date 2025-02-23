@@ -6,7 +6,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css'
 import "../Header/header.css"
 
-import logo from "../../img/LOGO.png"
+import logo from "../../img/logo-eiji.svg"
 
 function Header() {
 
